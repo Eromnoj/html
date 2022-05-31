@@ -30,8 +30,7 @@ body
     position: relative
     top: 10%
 
-.enter
-    background-image: url('../img/cat-g46540c59c_1920.jpg')
+@mixin banner
     background-attachment: fixed
     background-position: center
     background-repeat: no-repeat
@@ -41,16 +40,13 @@ body
     margin: 0
     color: white
 
+.enter
+    background-image: url('../img/cat-g46540c59c_1920.jpg')
+    @include banner
+
 .enter-event
     background-image: url('../img/cat-g55da96564_1920.jpg')
-    background-attachment: fixed
-    background-position: bottom
-    background-repeat: no-repeat
-    background-size: cover
-    width: 100%
-    height: 50vh
-    margin: 0
-    color: white
+    @include banner
 
 footer
     background-color: $dark-grey

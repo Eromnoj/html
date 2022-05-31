@@ -150,7 +150,7 @@ body {
 .enter-event {
   background-image: url("../img/cat-g55da96564_1920.jpg");
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
