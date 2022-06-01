@@ -1,4 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@-webkit-keyframes pelote {
+  0% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  10% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  15% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  20% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  25% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  47% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes pelote {
+  0% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  10% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  15% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  20% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  25% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  47% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 .modal {
   font-size: 0.75em;
 }
@@ -17,6 +102,10 @@
 
 .navbar {
   background-color: rgba(1, 1, 1, 0);
+}
+
+.navbar-light {
+  color: #181719;
 }
 
 .nav-link {
@@ -126,6 +215,7 @@
 .banner {
   width: 100%;
   margin: 0;
+  position: relative;
 }
 
 .banner-logo {
@@ -154,13 +244,82 @@
   width: 90%;
 }
 
+.wool-ball {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .wool-ball {
+    display: block;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    -webkit-filter: drop-shadow(6px 5px 5px #181719);
+            filter: drop-shadow(6px 5px 5px #181719);
+    -webkit-animation: pelote 10s linear 1s infinite;
+            animation: pelote 10s linear 1s infinite;
+  }
+  .wool-ball img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media screen and (min-width: 992px) {
+  .wool-ball {
+    right: 15%;
+  }
   .banner-logo img {
     height: 30vh;
     -webkit-mask-size: 80% 80%;
             mask-size: 80% 80%;
     -webkit-mask-position: center;
             mask-position: center;
+  }
+}
+
+@keyframes pelote {
+  0% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  10% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  15% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  20% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  25% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+  }
+  47% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
@@ -188,6 +347,20 @@ footer a:hover {
   list-style-type: none;
 }
 
+@media screen and (min-width: 576px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 html,
 body {
   width: 100%;
@@ -208,18 +381,17 @@ h3 {
 }
 
 .button {
-  background-color: #636267;
-  border-color: #636267;
+  background-color: #181719;
   color: #b0afb3;
   border-radius: 0px;
   border: none;
   padding: 12px 10px;
+  -webkit-box-shadow: 0px 2px 10px #636267;
+          box-shadow: 0px 2px 10px #636267;
 }
 
 .button:hover {
-  background-color: #b0afb3;
-  border-color: #b0afb3;
-  color: #636267;
+  background-color: #636267;
   border: none;
 }
 
