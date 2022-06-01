@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/css/style.css">
-    <title>BraveArts</title>
+    <title>Volti'Cats</title>
 </head>
 
 <body>
-    <div class="enter-event d-flex flex-column justify-content-center align-items-center">
-        <h1 class="title-logo"><img src="lib/img/logo.svg" alt=""></h1>
-        <p class="main-title">Nos Evènements à venir</p>
-    </div>
-    <div class="container-fluid">
+
+    <header>
         <!-- Modal -->
         <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -25,7 +22,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+                        <form>
                             <div class="mb-2">
                                 <label for="email" class="form-label">Votre email :</label>
                                 <input type="email" name="email" id="email" class="form-control">
@@ -56,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="lib/img/logo.svg" alt="logo" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -82,79 +79,137 @@
 
             </div>
         </nav>
+    </header>
 
-        <main>
-            <div class="pt-4">
-                <div class="row justify-content-evenly align-items-start mt-5 mb-5">
-                    <div class="col-12 col-md-6 col-lg-4 mb-2">
-                        <div class="eventCard">
-                            <div class="eventCardImg" style="background-image: url(lib/img/kitten-g49c5baa38_1280.jpg);">
+    <div class="banner">
+        <div class="banner-logo">
+            <img src="/lib/img/cat-g08b83dc1a_1280.png" alt="">
 
-                            </div>
-                            <div class="eventCardBody">
-                                <h5 class="eventCardTitle">Initiation</h5>
-                                <p class="eventCardText">Dès 6 mois, venez apprendre avec nos formateurs, Mistigri et Croquette</p>
+
+            <p class="banner-title">Nos évènements à venir</p>
+        </div>
+    </div>
+    <main>
+        <div class="pt-4">
+            <div class="row justify-content-evenly align-items-start mt-5 mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
+                    <div class="eventCard">
+                        <div class="eventCardImg" style="background-image: url(lib/img/kitten-g49c5baa38_1280.jpg);">
+
+                        </div>
+                        <div class="eventCardBody">
+                            <h5 class="eventCardTitle">Initiation</h5>
+                            <p class="eventCardText">Dès 6 mois, venez apprendre avec nos formateurs, Mistigri et
+                                Croquette</p>
+                            <div class="eventCardDatePlace">
                                 <p class="eventCardText"><i class="fa-solid fa-map"></i> Parc de Moustacheville</p>
                                 <p class="eventCardText"><i class="fa-solid fa-calendar-days"></i> Tous les samedis</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-2">
-                        <div class="eventCard">
-                            <div class="eventCardImg" style="background-image: url(lib/img/trash-ge1162bcc7_1280.jpg);">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
+                    <div class="eventCard">
+                        <div class="eventCardImg" style="background-image: url(lib/img/trash-ge1162bcc7_1280.jpg);">
 
-                            </div>
-                            <div class="eventCardBody">
-                                <h5 class="eventCardTitle">Parkour</h5>
-                                <p class="eventCardText">Parkour, haute voltige en perspective, pour félin aguerris </p>
+                        </div>
+                        <div class="eventCardBody">
+                            <h5 class="eventCardTitle">Parkour</h5>
+                            <p class="eventCardText">Parkour, haute voltige en perspective, pour félin aguerris </p>
+                            <div class="eventCardDatePlace">
                                 <p class="eventCardText"><i class="fa-solid fa-map"></i> Toit de la mairie, Saint-Félix</p>
                                 <p class="eventCardText"><i class="fa-solid fa-calendar-days"></i> 23/06/22</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-2">
-                       
-                        <div class="eventCard">
-                            <div class="eventCardImg" style="background-image: url(lib/img/sleeping-cat-g3dd9396bc_1280.jpg);">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2">
 
-                            </div>
-                            <div class="eventCardBody">
-                                <h5 class="eventCardTitle">Concours de sieste</h5>
-                                <p class="eventCardText">Nous célébrons la culture chat sous toutes ses facettes</p>
-                                <p class="eventCardText"><i class="fa-solid fa-map"></i> N'importe où, Miaoubourg</p>
-                                <p class="eventCardText"><i class="fa-solid fa-calendar-days"></i> du 18/07/22 au
-                                    24/07/22</p>
+                    <div class="eventCard">
+                        <div class="eventCardImg"
+                            style="background-image: url(lib/img/sleeping-cat-g3dd9396bc_1280.jpg);">
+
+                        </div>
+                        <div class="eventCardBody">
+                            <h5 class="eventCardTitle">Concours de sieste</h5>
+                            <p class="eventCardText">Nous célébrons la culture chat sous toutes ses facettes</p>
+                            <div class="eventCardDatePlace">
+                            <p class="eventCardText"><i class="fa-solid fa-map"></i> N'importe où, Miaoubourg</p>
+                            <p class="eventCardText"><i class="fa-solid fa-calendar-days"></i> du 18/07/22 au 24/07/22</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
-        </main>
-        <footer class="d-flex justify-content-evenly align-items-center row pt-3">
 
-            <div class="info col-12 col-md-3">
-                <p><strong>VOLTI'CATS</strong></p>
-                <p>7, Rue de la ficelle</p>
-                <p>96000 Miaoubourg</p>
-                <p><a href="tel:+336XXXXXXXX">06 XX XX XX XX</a></p>
             </div>
+        </div>
+        <div class="text prices">
+            <h3 class="">Tarifs des cours</h3>
+            <table class="table table-striped table-hover">
+                <caption>Tarifs de la saison 2021/2022</caption>
+                <thead>
+                    <tr>
+                        <th colspan="3">
+                            Les tarifs
+                        </th>
+                    </tr>
 
-            <div class="social col-12 col-md-3 d-flex justify-content-evenly">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a></i>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">250 € + 10 € adhésion annuelle association, collier de l'association offert
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1 heure</td>
+                        <td>40 €/h</td>
+                        <td>15 €/h et par félin supplémentaire</td>
+                    </tr>
+                    <tr>
+                        <td>A partir de 3 heures</td>
+                        <td>35 €/h</td>
+                        <td>15 €/h et par félin supplémentaire</td>
+                    </tr>
+                    <tr>
+                        <td>1 partir de 5 heures</td>
+                        <td>30 €/h</td>
+                        <td>15 €/h et par félin supplémentaire</td>
+                    </tr>
+                    <tr>
+                        <td>10 heures et plus</td>
+                        <td>25 €/h</td>
+                        <td>15 €/h et par félin supplémentaire</td>
+                    </tr>
+                </tbody>
 
-            <div class="ariane col-12 col-md-3">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="event.html">Evenements</a></li>
-                    <li><a href="" data-bs-toggle="modal" data-bs-target="#contactModal">
-                            Nous contacter</a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
+            </table>
+        </div>
+    </main>
+
+
+    <footer class="">
+
+        <div class="info">
+            <p><strong>VOLTI'CATS</strong></p>
+            <p>7, Rue de la ficelle</p>
+            <p>96000 Miaoubourg</p>
+            <p><a href="tel:+336XXXXXXXX">06 XX XX XX XX</a></p>
+        </div>
+
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="ariane">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="event.html">Evenements</a></li>
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        Nous contacter</a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="lib/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/dcd2189662.js" crossorigin="anonymous"></script>
 </body>

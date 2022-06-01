@@ -1,38 +1,29 @@
-@import "variables"
+.banner
+  width: 100%
+  margin: 0
 
-.title-logo
+.banner-logo
   text-align: center
-  position: relative
-  top: 10%
+  width: 100%
+  height: 60%
 
-.title-logo img
-  width: 90%
-
-.main-title
+.banner-title
   background-color: $dark-grey
   color: $light-grey
   padding: 10px
-  border-radius: 5px
   font-weight: bold
-  position: relative
-  top: 10%
+  margin-bottom: 30px
+  box-shadow: 0px 2px 10px $dark-grey
 
-@mixin banner
-  width: 100%
-  height: 50vh
-  margin: 0
-  color: white
-
-.enter
-  @include banner
-
-.main-img
+.banner-logo img
   mask-image: url(../img/logo.svg)
   mask-size: 100%
-  width: 100%
+  mask-position: 0px 50%
   mask-repeat: no-repeat
-  filter: drop-shadow(50px 20px 5px #00000099)
+  width: 90%
 
-.enter-event
-  background-image: url('../img/cat-g55da96564_1920.jpg')
-  @include banner
+@media screen and (min-width: 992px)
+  .banner-logo img
+    height: 30vh
+    mask-size: 80% 80%
+    mask-position: center

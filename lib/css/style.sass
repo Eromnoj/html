@@ -2,6 +2,7 @@
 @import "bsmod"
 @import "cards"
 @import "banner"
+@import "footer"
 
 html,
 body
@@ -14,28 +15,6 @@ body
 .logo
     width: 100px
 
-footer
-    background-color: $dark-grey
-    color: $light-grey
-    text-align: center
-    & a
-        color: $light-grey
-        text-decoration: none
-        &:hover
-            color: $light-grey
-
-.social
-    font-size: 2em
-
-.ariane ul
-    padding: 0
-    list-style-type: none
-
-.text
-    height: 100%
-    margin: 10px
-    padding: 15px
-
 h3
     color: $light-grey
     text-align: center
@@ -44,12 +23,42 @@ h3
 table
     text-align: center
 
-.image
+.block-1
     width: 100%
-    
-#maine
-    mask-image: url(../img/mask.png)
-    mask-size: 100%
-    mask-repeat: no-repeat
-    mask-position: 10% 0%
+    margin-bottom: 20px
+
+.image-block-1
     width: 100%
+    height: 100%
+
+.text
+    padding: 5px
+
+#main-coon
+    width: 100%
+
+footer
+    position: relative
+    bottom: -20px
+
+@media screen and (min-width: 992px)
+    .block-1
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    .description
+        width: 50%
+        padding: 15px
+        padding-left: 50px
+
+    #main-coon
+        mask-image: url(../img/mask.png)
+        mask-size: 100%
+        mask-repeat: no-repeat
+        flex-grow: 2
+
+
+@media screen and (min-width: 1025px)
+    .block-1
+        border-left: solid 35px rgb(99,98,103)
