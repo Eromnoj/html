@@ -21,14 +21,22 @@
     padding: 10px
     text-align: center
 
+.event-container
+    width: 100%
+    display: grid
+    margin: auto
+    justify-items: center
+    grid-template-columns: repeat(1, 1fr)
+
 .eventCard
     border: 1px solid $light-grey
     border-radius: 15px
-    width: 90%
+    max-width: 350px
     height: 600px
     margin: auto
     box-shadow: 2px 2px 6px black
     position: relative
+    margin: 5px
 
 .eventCardImg
     width: 100%
@@ -39,8 +47,6 @@
     background-color: $light-grey
     border-radius: 12px 12px 0px 0px
     box-shadow: inset 2px 2px 6px black
-
-.eventCard
 
 .eventCardTitle
     background-color: $dark-grey
@@ -54,3 +60,11 @@
 .eventCardDatePlace
     position: absolute
     bottom: 0px
+
+@media screen and (min-width: 768px)
+    .event-container
+        grid-template-columns: repeat(2, 1fr)
+
+@media screen and (min-width: 992px)
+    .event-container
+        grid-template-columns: repeat(3, 1fr)
