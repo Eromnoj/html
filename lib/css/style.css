@@ -1,89 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
-@-webkit-keyframes pelote {
-  0% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
-  }
-  10% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  15% {
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
-  }
-  20% {
-    -webkit-transform: rotate(3deg);
-            transform: rotate(3deg);
-  }
-  25% {
-    -webkit-transform: rotate(-1deg);
-            transform: rotate(-1deg);
-  }
-  30% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  40% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-  47% {
-    -webkit-transform: rotate(3deg);
-            transform: rotate(3deg);
-  }
-  50% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-@keyframes pelote {
-  0% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
-  }
-  10% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  15% {
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
-  }
-  20% {
-    -webkit-transform: rotate(3deg);
-            transform: rotate(3deg);
-  }
-  25% {
-    -webkit-transform: rotate(-1deg);
-            transform: rotate(-1deg);
-  }
-  30% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  40% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-  47% {
-    -webkit-transform: rotate(3deg);
-            transform: rotate(3deg);
-  }
-  50% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
 .modal {
   font-size: 0.75em;
 }
@@ -277,6 +192,49 @@
             mask-size: 80% 80%;
     -webkit-mask-position: center;
             mask-position: center;
+  }
+}
+
+@-webkit-keyframes pelote {
+  0% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  10% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  15% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  20% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  25% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+  }
+  47% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
