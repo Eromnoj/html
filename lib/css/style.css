@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 .modal {
   font-size: 0.75em;
 }
@@ -28,7 +29,7 @@
   color: #242424;
 }
 
-.btn-secondary:focus {
+.btn-secondary:hover:focus {
   color: #242424;
   background-color: #777575;
   border: 1px solid #777575;
@@ -37,7 +38,18 @@
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(1, 1, 1, 0);
+}
+
+.nav-link {
+  font-size: 1.5em;
+  color: #242424;
+  opacity: 1;
+}
+
+.active {
+  font-weight: bolder;
+  color: black;
 }
 
 .staff_member {
@@ -102,19 +114,6 @@
   padding: 10px;
 }
 
-html,
-body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  font-family: 'Comfortaa', cursive;
-}
-
-.logo {
-  width: 100px;
-}
-
 .title-logo {
   text-align: center;
   position: relative;
@@ -122,7 +121,7 @@ body {
 }
 
 .title-logo img {
-  width: 60%;
+  width: 90%;
 }
 
 .main-title {
@@ -136,27 +135,43 @@ body {
 }
 
 .enter {
-  background-image: url("../img/cat-g46540c59c_1920.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 50vh;
   margin: 0;
   color: white;
 }
 
+.main-img {
+  -webkit-mask-image: url(../img/logo.svg);
+          mask-image: url(../img/logo.svg);
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  width: 100%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-filter: drop-shadow(50px 20px 5px #00000099);
+          filter: drop-shadow(50px 20px 5px #00000099);
+}
+
 .enter-event {
   background-image: url("../img/cat-g55da96564_1920.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 50vh;
   margin: 0;
   color: white;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.logo {
+  width: 100px;
 }
 
 footer {
@@ -199,6 +214,10 @@ table {
   text-align: center;
 }
 
+.image {
+  width: 100%;
+}
+
 #maine {
   -webkit-mask-image: url(../img/mask.png);
           mask-image: url(../img/mask.png);
@@ -208,5 +227,6 @@ table {
           mask-repeat: no-repeat;
   -webkit-mask-position: 10% 0%;
           mask-position: 10% 0%;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

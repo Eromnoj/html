@@ -1,6 +1,7 @@
 @import "variables"
 @import "bsmod"
 @import "cards"
+@import "banner"
 
 html,
 body
@@ -12,41 +13,6 @@ body
 
 .logo
     width: 100px
-
-.title-logo
-    text-align: center
-    position: relative
-    top: 10%
-
-.title-logo img
-    width: 60%
-
-.main-title
-    background-color: $dark-grey
-    color: $light-grey
-    padding: 10px
-    border-radius: 5px
-    font-weight: bold
-    position: relative
-    top: 10%
-
-@mixin banner
-    background-attachment: fixed
-    background-position: center
-    background-repeat: no-repeat
-    background-size: cover
-    width: 100%
-    height: 50vh
-    margin: 0
-    color: white
-
-.enter
-    background-image: url('../img/cat-g46540c59c_1920.jpg')
-    @include banner
-
-.enter-event
-    background-image: url('../img/cat-g55da96564_1920.jpg')
-    @include banner
 
 footer
     background-color: $dark-grey
@@ -78,8 +44,12 @@ h3
 table
     text-align: center
 
+.image
+    width: 100%
+    
 #maine
     mask-image: url(../img/mask.png)
     mask-size: 100%
     mask-repeat: no-repeat
     mask-position: 10% 0%
+    width: 100%
