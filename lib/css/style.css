@@ -432,6 +432,11 @@ footer {
     -webkit-mask-repeat: no-repeat;
             mask-repeat: no-repeat;
   }
+  .block-3 {
+    max-width: 750px;
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 1025px) {
