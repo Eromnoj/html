@@ -352,7 +352,7 @@ h3 {
   border: none;
 }
 
-.button:hover:focus {
+.button:focus {
   color: #636267;
   background-color: #b0afb3;
   border: none;
@@ -360,7 +360,7 @@ h3 {
           box-shadow: none;
 }
 
-.button:hover:active {
+.button:active {
   border: none;
 }
 
