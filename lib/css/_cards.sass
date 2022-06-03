@@ -1,6 +1,5 @@
 .staff_member
     border: 1px solid $light-grey
-    border-radius: 15px
     max-width: 600px
     width: 90%
     height: 380px
@@ -13,7 +12,6 @@
     background-repeat: no-repeat
     background-position: center
     background-size: cover
-    border-radius: 15px 15px 0px 0px
     box-shadow: 2px 2px 6px $darker-grey
     border-bottom: 15px solid $light-grey
 
@@ -30,8 +28,7 @@
 
 .eventCard
     border: 1px solid $light-grey
-    border-radius: 15px
-    max-width: 350px
+    width: 90%
     height: 600px
     margin: auto
     box-shadow: 2px 2px 6px $darker-grey
@@ -45,13 +42,12 @@
     background-position: center
     background-size: contain
     background-color: $light-grey
-    border-radius: 12px 12px 0px 0px
     box-shadow: inset 2px 2px 6px $darker-grey
 
 .eventCardTitle
     background-color: $dark-grey
     color: white
-    box-shadow: 0px 3px 8px $darker-grey
+    box-shadow: 0px 2px 5px $darker-grey
     padding: 5px
 
 .eventCardText
@@ -60,6 +56,10 @@
 .eventCardDatePlace
     position: absolute
     bottom: 0px
+
+@media screen and (min-width: 576px)
+    .eventCard
+        max-width: 350px
 
 @media screen and (min-width: 768px)
     .event-container
