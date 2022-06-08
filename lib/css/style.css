@@ -287,6 +287,9 @@ footer {
   background-color: #636267;
   color: #b0afb3;
   text-align: center;
+  position: relative;
+  bottom: -20px;
+  padding-top: 20px;
 }
 
 footer a {
@@ -296,6 +299,14 @@ footer a {
 
 footer a:hover {
   color: #b0afb3;
+}
+
+.footer-bottombar {
+  background-color: #181719;
+}
+
+.footer-bottombar small {
+  font-size: 0.7em;
 }
 
 .social {
@@ -412,20 +423,6 @@ h3 {
 
 table {
   text-align: center;
-}
-
-footer {
-  position: relative;
-  bottom: -20px;
-  padding-top: 20px;
-}
-
-.footer-bottombar {
-  background-color: #181719;
-}
-
-.footer-bottombar small {
-  font-size: 0.7em;
 }
 
 @media screen and (min-width: 992px) {
