@@ -10,14 +10,13 @@
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/css/style.css">
     <link rel="icon" type="image/x-icon" href="/lib/img/favicon.png">
-    <link href="https://fr.allfont.net/allfont.css?fonts=matura-mt-script-capitals" rel="stylesheet" type="text/css">
     <title>Volti'Cats</title>
 </head>
 
 <body>
 
     <header>
-        <!-- Modal -->
+        <!-- Modal from Bootstrap framework-->
         <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -83,17 +82,18 @@
 
             </div>
         </nav>
-    </header>
 
-    <div class="banner">
-        <div class="banner-logo">
-            <img src="/lib/img/cat-g08b83dc1a_1280.jpg" alt="">
-            <p class="banner-title">Association de chats acrobates</p>
+        <div class="banner">
+            <div class="banner-logo">
+                <img src="/lib/img/cat-g08b83dc1a_1280.jpg" alt="">
+                <p class="banner-title">Association de chats acrobates</p>
+            </div>
+            <div class="wool-ball">
+                <img src="/lib/img/wool.png" alt="">
+            </div>
         </div>
-        <div class="wool-ball">
-            <img src="/lib/img/wool.png" alt="">
-        </div>
-    </div>
+
+    </header>
 
     <main>
         <section class="block-1">
@@ -137,6 +137,7 @@
         <section class="block-3">
             <div class="">
                 <h3 class="pb-2">L'équipe</h3>
+                <!-- Carousel from bootstrap -->
                 <div id="carouselBA" class="carousel slide" data-bs-ride="carousel">
 
                     <div class="carousel-inner">
@@ -220,9 +221,11 @@
             </div>
         </div>
         <div class="footer-bottombar">
-            <p class="disclaimer">Editions du Chanard <small>  " Quel animal fait choin-choin ? Le chanard... "</small></p>
+            <p class="disclaimer">Editions du Chanard <small> " Quel animal fait choin-choin ? Le chanard... "</small>
+            </p>
         </div>
     </footer>
+    <!-- Import of bootstrap bundle and fontawesome kit -->
     <script src="lib/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/dcd2189662.js" crossorigin="anonymous"></script>
 </body>
